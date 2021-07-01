@@ -35,3 +35,11 @@ $(document).ready(function () {
 });
 
 
+// burger menu 
+
+$(document).ready(function() {
+   $('.header__burger').click(function(e){
+      $('.header__burger, .navigate').toggleClass('active');
+   });
+});
+
