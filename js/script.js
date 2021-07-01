@@ -1,3 +1,4 @@
+
 // view more project home 
 
 let ourProjectsItem = $('.our-projects__item');
@@ -40,6 +41,26 @@ $(document).ready(function () {
 $(document).ready(function() {
    $('.header__burger').click(function(e){
       $('.header__burger, .navigate').toggleClass('active');
+      $('body').toggleClass('lock');
    });
+   
+
+   // navigate
+
+   $('.navigate__item').click(function(e){
+      e.preventDefault();
+      setTimeout(function(){
+         $('.header__burger, .navigate').removeClass('active');
+      }, 400, "linear");
+      // $('.header__burger, .navigate').removeClass('active');
+      const ID = $(this).attr('href');
+      //  console.log(ID);
+      const PAGE_OFFSET = $(ID).offset().top;
+      //  console.log(PAGE_OFFSET);
+      $('html, body').animate({
+         scrollTop: PAGE_OFFSET
+      },"slow", "linear")
+   });
+
 });
 
