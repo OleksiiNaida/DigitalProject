@@ -77,7 +77,6 @@ a {
 
 	&__menu {
 		display: flex;
-		// justify-content: space-evenly;
 		width: 100%;
 		padding-left: 0px;
 		margin-bottom: 0px;
@@ -777,6 +776,10 @@ a {
 	.project-home__btn {
 		left: 35.1%;
 	}
+	.our-projects__text_medium {
+		font-size: 30px;
+		line-height: 35px;
+	}
 	.company__item:last-child {
 		left: 9.4%;
 	}
@@ -796,6 +799,10 @@ a {
 		margin-right: 0px;
 	}
 
+	.our-projects__text_medium {
+		font-size: 30px;
+		line-height: 35px;
+	}
 	.project-home__btn {
 		left: 37.7%;
 		bottom: 15.3%;
@@ -806,6 +813,9 @@ a {
 	.project-home .slick-next {
 		top: 57.5%;
 		left: -36%;
+	}
+	.our-projects__content {
+		padding-left: 5%;
 	}
 	.line {
 		max-width: 190px;
@@ -900,6 +910,10 @@ a {
 	.project-home__btn {
 		left: 35%;
 	}
+
+	.our-projects__content {
+		padding-left: 3%;
+	}
 }
 
 @media all and (max-width: 991.98px) {
@@ -980,6 +994,25 @@ a {
 	.our-projects {
 		padding-bottom: 60px;
    }
+
+	.our-projects__text {
+		font-size: 29px;
+		padding-bottom: 0px;
+	}
+
+	.our-projects__text_small {
+		font-size: 12px;
+		line-height: 18px;
+		padding-bottom: 5px;
+	}
+
+	.our-projects__btn-more-details {
+		font-size: 7px;
+	}
+
+	.our-projects__item:nth-child(5) .our-projects__content {
+		padding-left: 6%;
+	}
 
 	.form__label input {
 		height: 20px;
@@ -1250,6 +1283,13 @@ a {
 		&__title {
 			padding-bottom: 20px;
 		}
+		&__text {
+			line-height: 40px;
+		}
+		&__text_small {
+			font-size: 29px;
+			line-height: 40px;
+		}
 	}
 
 	.contact-us {
@@ -1349,6 +1389,18 @@ a {
 	.project-home__btn {
 		bottom: 20.4%;
 	}
+
+	.our-projects {
+		&__text {
+			font-size: 18px;
+			line-height: 28px;
+		}
+		&__text_small {
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+
 	.line {
 		max-width: 35px;
 		bottom: 62%;
